@@ -1,0 +1,30 @@
+# Portfólio Profissional - Marcos Yokoyama
+
+**Nome do aluno:** Marcos Hideyuki Yokoyama
+
+## Descrição do Portfólio
+Este projeto é um site de portfólio pessoal construído como formato "One Page" (página única). Ele serve para apresentar minha trajetória acadêmica e profissional, unindo minha base como Professor e Pesquisador (Gestão/Operações) com os novos conhecimentos adquiridos no curso técnico de Análise e Desenvolvimento de Sistemas do Centro Paula Souza.
+
+## Tecnologias Utilizadas
+* HTML5 (Estruturação semântica)
+* CSS3 (Estilização e customização de animações)
+* Bootstrap 5.3.3 (Framework de responsividade, grids, menu nav e botões)
+
+## Link do Site Publicado
+[Insira aqui o link final do GitHub Pages, ex: https://marcoshy-cps.github.io/portfolio/]
+
+## Explicação do Funcionamento do Projeto
+O site funciona por meio de seções interligadas pela Navbar fixa no topo. O usuário pode clicar nos links do menu para rolar suavemente até áreas específicas:
+* **Perfil:** Apresentação básica e resumo de habilidades.
+* **Trajetória:** Resumo da evolução acadêmica.
+* **Projetos:** Cards responsivos com trabalhos realizados e links para repositórios.
+* **Contato:** Links diretos para meu GitHub.
+
+## Descrição dos Recursos Novos Adicionados
+Para afastar o site do modelo engessado da apostila e dar uma identidade mais profissional, implementei duas melhorias:
+1. **Nova Seção de "Trajetória e Formação":** Uma seção inteira extra, ancorada no menu, que detalha minha formação multidisciplinar usando o sistema de grids do Bootstrap.
+2. **Efeitos Visuais Interativos (Hover em Cards):** Animação e transição nos cards de projetos e de trajetória.
+
+## Explicação de Como o Recurso foi Implementado
+1. A **nova seção** foi montada utilizando as classes `<section>`, `<div class="container">` e `row` do Bootstrap para alinhar os elementos de texto abaixo do meu perfil principal.
+2. A **animação visual** foi criada inteiramente via CSS na tag `<style>` do `<head>`. Criei uma classe chamada `.card-hover`. Nela, adicionei a propriedade `transition: transform 0.3s ease, box-shadow 0.3s ease;` para suavizar o movimento. Em seguida, utilizei a pseudo-classe `:hover` (`.card-hover:hover`) para aplicar a elevação no eixo Y (`transform: translateY(-10px)`) e o espalhamento de sombra (`box-shadow`), dando a sensação de que o card "pula" ao receber o mouse do usuário.
